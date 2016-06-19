@@ -1,3 +1,3 @@
 # Automation and Tests with TeamCity
 
-Example project for TamCity and different approaches to automation and tests.
+Example project for TeamCity and different approaches to automation and tests.
