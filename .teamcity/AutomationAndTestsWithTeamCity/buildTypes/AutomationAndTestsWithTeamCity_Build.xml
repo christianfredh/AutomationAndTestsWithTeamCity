@@ -47,11 +47,11 @@
           <param name="mstest_enable" value="checked" />
           <param name="teamcity.step.mode" value="default" />
           <param name="vstest_detect_team_city_logger" value="true" />
-          <param name="vstest_engine" value="MSTest" />
+          <param name="vstest_engine" value="VSTest" />
           <param name="vstest_framework" value="default" />
-          <param name="vstest_include" value="*.dll" />
+          <param name="vstest_include" value="MSTest\bin\Release\MSTest.dll" />
           <param name="vstest_platform" value="x86" />
-          <param name="vstest_runner_path" value="%teamcity.dotnet.mstest.14.0%" />
+          <param name="vstest_runner_path" value="%teamcity.dotnet.vstest.14.0%" />
         </parameters>
       </runner>
     </build-runners>
