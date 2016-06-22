@@ -6,7 +6,21 @@ casper.test.begin("Verify that kittens are cute", function (test) {
         test.fail("URL option is not configured.");
     }
 
-    casper.start(optionUrl);
+
+    casper.start("http://google.com", function () {
+
+        setTimeout(function () {
+            // Initial frame
+            var frame = 0;
+            // Add an interval every 25th second
+            setInterval(function () {
+                // Render an image with the frame name
+                casper.capture("frames/dragon" + (frame++) + ".png");
+            }, 25);
+        }, 666);
+    });
+
+    casper.thenOpen(optionUrl);
 
     casper.then(function () {
         test.assertExist("img");
