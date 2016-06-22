@@ -9,15 +9,13 @@ casper.test.begin("Verify that kittens are cute", function (test) {
 
     casper.start("http://google.com", function () {
 
-        setTimeout(function () {
-            // Initial frame
-            var frame = 0;
-            // Add an interval every second
-            setInterval(function () {
-                // Render an image with the frame name
-                casper.capture("frames/dragon" + (frame++) + ".png");
-            }, 1);
-        }, 666);
+        // Initial frame
+        var frame = 0;
+        // Add an interval every second
+        setInterval(function () {
+            // Render an image with the frame name
+            casper.capture("frames/dragon" + (frame++) + ".png");
+        }, 1);
     });
 
     casper.thenOpen(optionUrl);
