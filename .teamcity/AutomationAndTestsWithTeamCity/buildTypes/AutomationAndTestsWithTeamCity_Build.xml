@@ -80,6 +80,13 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_5" name="XUnit" type="simpleRunner">
+        <parameters>
+          <param name="command.executable" value="packages\xunit.runner.console.2.1.0\tools\xunit.console.exe" />
+          <param name="command.parameters" value="XUnit\bin\Release\XUnit.dll" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="AutomationAndTestsWithTeamCity_HttpsGithubComChristianfredhAutomationAndTestsWit" />
