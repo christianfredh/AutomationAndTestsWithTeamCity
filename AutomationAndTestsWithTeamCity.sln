@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jasmine", "Jasmine\Jasmine.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasperJs", "CasperJs\CasperJs.csproj", "{2B2FCF61-2F39-4BEE-B68A-9AFB88513057}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlow", "SpecFlow\SpecFlow.csproj", "{09C0F131-A8D6-4DF0-9559-CBC532823679}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2B2FCF61-2F39-4BEE-B68A-9AFB88513057}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B2FCF61-2F39-4BEE-B68A-9AFB88513057}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B2FCF61-2F39-4BEE-B68A-9AFB88513057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C0F131-A8D6-4DF0-9559-CBC532823679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C0F131-A8D6-4DF0-9559-CBC532823679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C0F131-A8D6-4DF0-9559-CBC532823679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C0F131-A8D6-4DF0-9559-CBC532823679}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
