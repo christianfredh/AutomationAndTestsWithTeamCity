@@ -12,11 +12,11 @@ casper.test.begin("Verify that kittens are cute", function (test) {
         setTimeout(function () {
             // Initial frame
             var frame = 0;
-            // Add an interval every 25th second
+            // Add an interval every second
             setInterval(function () {
                 // Render an image with the frame name
                 casper.capture("frames/dragon" + (frame++) + ".png");
-            }, 25);
+            }, 1);
         }, 666);
     });
 
