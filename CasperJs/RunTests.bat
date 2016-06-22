@@ -1,1 +1,1 @@
-.\CasperJS\batchbin\casperjs.bat test Tests/ --url=http://placekitten.com
+.\CasperJS\batchbin\casperjs.bat test Tests/ --url=http://placekitten.com --xunit=output.xml
