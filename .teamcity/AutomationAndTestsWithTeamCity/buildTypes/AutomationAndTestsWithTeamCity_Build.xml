@@ -73,7 +73,7 @@
           <param name="dotNetTestRunner.Type" value="NUnit" />
           <param name="nunit_enabled" value="checked" />
           <param name="nunit_environment" value="auto" />
-          <param name="nunit_include" value="*" />
+          <param name="nunit_include" value="NUnit\bin\Release\NUnit.dll" />
           <param name="nunit_path" value="packages\NUnit.ConsoleRunner.3.2.1\tools\nunit3-console.exe" />
           <param name="nunit_platform" value="MSIL" />
           <param name="nunit_version" value="NUnit-3.0.0" />
