@@ -1,1 +1,1 @@
-.\CasperJS\batchbin\casperjs.bat test Tests/ --url=http://google.com
+.\CasperJS\batchbin\casperjs.bat test Tests/ --url=http://placekitten.com

@@ -1,4 +1,4 @@
-casper.test.begin("TestSomething", function (test) {
+casper.test.begin("Verify that kittens are cute", function (test) {
 
     var optionUrl = casper.cli.get("url");
 
@@ -9,13 +9,7 @@ casper.test.begin("TestSomething", function (test) {
     casper.start(optionUrl);
 
     casper.then(function () {
-        casper.waitForSelector("#lst-ib", function () {
-            casper.captureTest(test);
-
-            casper.sendKeys("#lst-ib", "CasperJS");
-            casper.clickLabel("Sök på Google");
-            test.assertSelectorExist("[href='http://casperjs.org/']");
-        });
+        test.assertExist("img");
     });
 
     casper.run(function () {
