@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B2FCF61-2F39-4BEE-B68A-9AFB88513057}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RegressionTests</RootNamespace>
+    <AssemblyName>RegressionTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CasperJS\batchbin\casperjs.bat" />
+    <None Include="CasperJS\bin\casperjs" />
+    <None Include="CasperJS\package.json" />
+    <None Include="CasperJS\tests\clitests\modules\node_modules\baz\package.json" />
+    <None Include="CasperJS\tests\clitests\modules\node_modules\json.json" />
+    <None Include="CasperJS\tests\clitests\modules\sub\coffeemod.coffee" />
+    <None Include="CasperJS\tests\sample_modules\config.json" />
+    <None Include="CasperJS\tests\sample_modules\csmodule.coffee" />
+    <None Include="CasperJS\tests\suites\.casper" />
+    <None Include="CasperJS\tests\suites\casper\.casper" />
+    <None Include="CasperJS\tests\suites\casper\flow.coffee" />
+    <None Include="CasperJS\tests\suites\casper\request.coffee" />
+    <None Include="CasperJS\tests\suites\coffee.coffee" />
+    <None Include="CasperJS\tests\suites\tester\.casper" />
+    <None Include="packages.config" />
+    <None Include="RunTests.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CasperJS\bin\bootstrap.js" />
+    <Content Include="CasperJS\bin\casperjs.exe" />
+    <Content Include="CasperJS\bin\usage.txt" />
+    <Content Include="CasperJS\modules\casper.js" />
+    <Content Include="CasperJS\modules\cli.js" />
+    <Content Include="CasperJS\modules\clientutils.js" />
+    <Content Include="CasperJS\modules\colorizer.js" />
+    <Content Include="CasperJS\modules\events.js" />
+    <Content Include="CasperJS\modules\http.js" />
+    <Content Include="CasperJS\modules\mouse.js" />
+    <Content Include="CasperJS\modules\pagestack.js" />
+    <Content Include="CasperJS\modules\querystring.js" />
+    <Content Include="CasperJS\modules\tester.js" />
+    <Content Include="CasperJS\modules\utils.js" />
+    <Content Include="CasperJS\modules\xunit.js" />
+    <Content Include="CasperJS\tests\clitests\error\syntax.js" />
+    <Content Include="CasperJS\tests\clitests\fail-fast\manual-abort\index.js" />
+    <Content Include="CasperJS\tests\clitests\fail-fast\standard\test1.js" />
+    <Content Include="CasperJS\tests\clitests\fail-fast\standard\test2.js" />
+    <Content Include="CasperJS\tests\clitests\fail-fast\standard\test3.js" />
+    <Content Include="CasperJS\tests\clitests\modules\mod.js" />
+    <Content Include="CasperJS\tests\clitests\modules\node_modules\bar.js" />
+    <Content Include="CasperJS\tests\clitests\modules\node_modules\baz\baz.js" />
+    <Content Include="CasperJS\tests\clitests\modules\node_modules\foo\index.js" />
+    <Content Include="CasperJS\tests\clitests\modules\sub\mod.js" />
+    <Content Include="CasperJS\tests\clitests\modules\test.js" />
+    <Content Include="CasperJS\tests\clitests\modules\test_coffee.js" />
+    <Content Include="CasperJS\tests\clitests\modules\test_node_json.js" />
+    <Content Include="CasperJS\tests\clitests\modules\test_node_mod.js" />
+    <Content Include="CasperJS\tests\clitests\modules\test_node_mod_index.js" />
+    <Content Include="CasperJS\tests\clitests\modules\test_node_mod_json_package.js" />
+    <Content Include="CasperJS\tests\clitests\modules\test_patched_require.js" />
+    <Content Include="CasperJS\tests\clitests\runtests.py" />
+    <Content Include="CasperJS\tests\clitests\scripts\script.js" />
+    <Content Include="CasperJS\tests\clitests\tester\casper-instance-override.js" />
+    <Content Include="CasperJS\tests\clitests\tester\dubious.js" />
+    <Content Include="CasperJS\tests\clitests\tester\exit.js" />
+    <Content Include="CasperJS\tests\clitests\tester\failing.js" />
+    <Content Include="CasperJS\tests\clitests\tester\mytest.js" />
+    <Content Include="CasperJS\tests\clitests\tester\passing.js" />
+    <Content Include="CasperJS\tests\clitests\tester\skipped.js" />
+    <Content Include="CasperJS\tests\clitests\tester\step_throws.js" />
+    <Content Include="CasperJS\tests\clitests\tester\waitFor_timeout.js" />
+    <Content Include="CasperJS\tests\run.js" />
+    <Content Include="CasperJS\tests\sample_modules\jsmodule.js" />
+    <Content Include="CasperJS\tests\selftest.js" />
+    <Content Include="CasperJS\tests\site\alert.html" />
+    <Content Include="CasperJS\tests\site\callback.html" />
+    <Content Include="CasperJS\tests\site\click.html" />
+    <Content Include="CasperJS\tests\site\confirm.html" />
+    <Content Include="CasperJS\tests\site\dummy.js" />
+    <Content Include="CasperJS\tests\site\elementattribute.html" />
+    <Content Include="CasperJS\tests\site\error.html" />
+    <Content Include="CasperJS\tests\site\field-array.html" />
+    <Content Include="CasperJS\tests\site\form.html" />
+    <Content Include="CasperJS\tests\site\frame1.html" />
+    <Content Include="CasperJS\tests\site\frame2.html" />
+    <Content Include="CasperJS\tests\site\frame3.html" />
+    <Content Include="CasperJS\tests\site\frames.html" />
+    <Content Include="CasperJS\tests\site\global.html" />
+    <Content Include="CasperJS\tests\site\images\phantom.png" />
+    <Content Include="CasperJS\tests\site\includes\include1.js" />
+    <Content Include="CasperJS\tests\site\includes\include2.js" />
+    <Content Include="CasperJS\tests\site\index.html" />
+    <Content Include="CasperJS\tests\site\mouse-events.html" />
+    <Content Include="CasperJS\tests\site\multiple-forms.html" />
+    <Content Include="CasperJS\tests\site\page1.html" />
+    <Content Include="CasperJS\tests\site\page2.html" />
+    <Content Include="CasperJS\tests\site\page3.html" />
+    <Content Include="CasperJS\tests\site\popup.html" />
+    <Content Include="CasperJS\tests\site\prompt.html" />
+    <Content Include="CasperJS\tests\site\resources.html" />
+    <Content Include="CasperJS\tests\site\result.html" />
+    <Content Include="CasperJS\tests\site\test.html" />
+    <Content Include="CasperJS\tests\site\urls.html" />
+    <Content Include="CasperJS\tests\site\visible.html" />
+    <Content Include="CasperJS\tests\site\waitFor.html" />
+    <Content Include="CasperJS\tests\suites\casper\agent.js" />
+    <Content Include="CasperJS\tests\suites\casper\alert.js" />
+    <Content Include="CasperJS\tests\suites\casper\auth.js" />
+    <Content Include="CasperJS\tests\suites\casper\bypass.js" />
+    <Content Include="CasperJS\tests\suites\casper\callback.js" />
+    <Content Include="CasperJS\tests\suites\casper\callutils.js" />
+    <Content Include="CasperJS\tests\suites\casper\capture.js" />
+    <Content Include="CasperJS\tests\suites\casper\click.js" />
+    <Content Include="CasperJS\tests\suites\casper\confirm.js" />
+    <Content Include="CasperJS\tests\suites\casper\content.js" />
+    <Content Include="CasperJS\tests\suites\casper\debug.js" />
+    <Content Include="CasperJS\tests\suites\casper\elementattribute.js" />
+    <Content Include="CasperJS\tests\suites\casper\encode.js" />
+    <Content Include="CasperJS\tests\suites\casper\evaluate.js" />
+    <Content Include="CasperJS\tests\suites\casper\events.js" />
+    <Content Include="CasperJS\tests\suites\casper\exists.js" />
+    <Content Include="CasperJS\tests\suites\casper\fetchtext.js" />
+    <Content Include="CasperJS\tests\suites\casper\formfill.js" />
+    <Content Include="CasperJS\tests\suites\casper\frames.js" />
+    <Content Include="CasperJS\tests\suites\casper\global.js" />
+    <Content Include="CasperJS\tests\suites\casper\headers.js" />
+    <Content Include="CasperJS\tests\suites\casper\history.js" />
+    <Content Include="CasperJS\tests\suites\casper\hooks.js" />
+    <Content Include="CasperJS\tests\suites\casper\keys.js" />
+    <Content Include="CasperJS\tests\suites\casper\location.js" />
+    <Content Include="CasperJS\tests\suites\casper\logging.js" />
+    <Content Include="CasperJS\tests\suites\casper\mouseevents.js" />
+    <Content Include="CasperJS\tests\suites\casper\navigation.js" />
+    <Content Include="CasperJS\tests\suites\casper\onerror.js" />
+    <Content Include="CasperJS\tests\suites\casper\open.js" />
+    <Content Include="CasperJS\tests\suites\casper\popup.js" />
+    <Content Include="CasperJS\tests\suites\casper\prompt.js" />
+    <Content Include="CasperJS\tests\suites\casper\request.js" />
+    <Content Include="CasperJS\tests\suites\casper\resources.js" />
+    <Content Include="CasperJS\tests\suites\casper\scripts.js" />
+    <Content Include="CasperJS\tests\suites\casper\scroll.js" />
+    <Content Include="CasperJS\tests\suites\casper\start.js" />
+    <Content Include="CasperJS\tests\suites\casper\steps.js" />
+    <Content Include="CasperJS\tests\suites\casper\urls.js" />
+    <Content Include="CasperJS\tests\suites\casper\viewport.js" />
+    <Content Include="CasperJS\tests\suites\casper\visible.js" />
+    <Content Include="CasperJS\tests\suites\casper\wait.js" />
+    <Content Include="CasperJS\tests\suites\casper\xpath.js" />
+    <Content Include="CasperJS\tests\suites\cli.js" />
+    <Content Include="CasperJS\tests\suites\clientutils.js" />
+    <Content Include="CasperJS\tests\suites\fs.js" />
+    <Content Include="CasperJS\tests\suites\http_status.js" />
+    <Content Include="CasperJS\tests\suites\pagestack.js" />
+    <Content Include="CasperJS\tests\suites\require.js" />
+    <Content Include="CasperJS\tests\suites\tester\assert.js" />
+    <Content Include="CasperJS\tests\suites\tester\begin-config.js" />
+    <Content Include="CasperJS\tests\suites\tester\setup-teardown-async.js" />
+    <Content Include="CasperJS\tests\suites\tester\setup-teardown.js" />
+    <Content Include="CasperJS\tests\suites\tester\skip.js" />
+    <Content Include="CasperJS\tests\suites\tester\test-order.js" />
+    <Content Include="CasperJS\tests\suites\tester\testcase.js" />
+    <Content Include="CasperJS\tests\suites\tester\testsuite.js" />
+    <Content Include="CasperJS\tests\suites\utils.js" />
+    <Content Include="CasperJS\tests\suites\xunit.js" />
+    <Content Include="CasperJS\tests\testdir\01_a\abc.js" />
+    <Content Include="CasperJS\tests\testdir\01_a\def.js" />
+    <Content Include="CasperJS\tests\testdir\02_b\abc.js" />
+    <Content Include="CasperJS\tests\testdir\03_a.js" />
+    <Content Include="CasperJS\tests\testdir\03_b.js" />
+    <Content Include="CasperJS\tests\testdir\04\01_init.js" />
+    <Content Include="CasperJS\tests\testdir\04\02_do.js" />
+    <Content Include="phantomjs-license.txt" />
+    <Content Include="PhantomJS\phantomjs.exe" />
+    <Content Include="Tests\0-setup.js" />
+    <Content Include="Readme.txt" />
+    <Content Include="Tests\1-testsomething.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
