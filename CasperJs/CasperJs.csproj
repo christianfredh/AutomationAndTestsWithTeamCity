@@ -204,6 +204,7 @@
     <Content Include="CasperJS\tests\testdir\03_b.js" />
     <Content Include="CasperJS\tests\testdir\04\01_init.js" />
     <Content Include="CasperJS\tests\testdir\04\02_do.js" />
+    <Content Include="ffmpeg\ffmpeg.exe" />
     <Content Include="phantomjs-license.txt" />
     <Content Include="PhantomJS\phantomjs.exe" />
     <Content Include="Tests\0-setup.js" />
