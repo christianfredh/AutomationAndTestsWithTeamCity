@@ -13,9 +13,19 @@ casper.test.begin("Verify that kittens are cute", function (test) {
         var frame = 0;
         // Add an interval every second
         setInterval(function () {
+
+            var frameString = frame.toString();
+
+            if (frame < 10) {
+                frameString = "00" + frame;
+            } else if (frame < 100) {
+                frameString = "0" + frame;
+            }
+
+
             // Render an image with the frame name
-            casper.capture("frames/dragon1" + frame + ".png");
-            casper.capture("ffmpeg/dragon1" + frame + ".png");
+            casper.capture("frames/dragon" + frameString + ".png");
+            casper.capture("ffmpeg/dragon" + frameString + ".png");
             frame++;
         }, 15);
     });
