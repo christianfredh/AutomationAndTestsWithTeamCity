@@ -7,7 +7,7 @@ casper.test.begin("Verify that kittens are cute", function (test) {
     }
 
 
-    casper.start("http://google.com", function () {
+    casper.start(optionUrl, function () {
 
         // Initial frame
         var frame = 0;
@@ -24,13 +24,25 @@ casper.test.begin("Verify that kittens are cute", function (test) {
 
 
             // Render an image with the frame name
-            casper.capture("frames/dragon" + frameString + ".png");
-            casper.capture("ffmpeg/dragon" + frameString + ".png");
+            casper.capture("frames/dragon" + frameString + ".png", {
+                top: 0,
+                left: 0,
+                width: 640,
+                height: 400
+            });
+            casper.capture("ffmpeg/dragon" + frameString + ".png", {
+                top: 0,
+                left: 0,
+                width: 640,
+                height: 400
+            });
             frame++;
         }, 15);
     });
 
-    casper.thenOpen(optionUrl);
+    //casper.thenOpen(optionUrl);
+
+    casper.thenClick(".links a:first-child");
 
     casper.then(function () {
         test.assertExist("img");
