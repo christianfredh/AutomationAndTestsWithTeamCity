@@ -57,6 +57,7 @@
     <None Include="CasperJS\tests\suites\casper\request.coffee" />
     <None Include="CasperJS\tests\suites\coffee.coffee" />
     <None Include="CasperJS\tests\suites\tester\.casper" />
+    <None Include="ffmpeg\MakeVideo.bat" />
     <None Include="packages.config" />
     <None Include="RunTests.bat" />
   </ItemGroup>
