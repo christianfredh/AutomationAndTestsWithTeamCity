@@ -11,7 +11,7 @@
         {
             var pants = new Pants();
 
-            pants.Color.Should().Be("purple");
+            pants.Color.Should().Be("purple", "purple is nice");
         }
 
         [Fact]
