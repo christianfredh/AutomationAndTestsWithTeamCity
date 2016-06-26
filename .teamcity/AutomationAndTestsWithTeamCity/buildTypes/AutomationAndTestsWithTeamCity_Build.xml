@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="95f236e7-b696-482c-a443-35b2ef42943d" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
-  <name>Build</name>
+  <name>Run all the tests in the world</name>
   <description />
   <settings>
+    <options>
+      <option name="artifactRules" value="CasperJs\Captures =&gt; CasperJs-Captures&#xA;CasperJs\frames =&gt; CasperJs-Frames&#xA;CasperJs\ffmpeg\out.mp4 =&gt; CasperJs-Video&#xA;SpecFlow\TestResult.html =&gt; SpecFlow&#xA;SpecFlow\TestResult.txt =&gt; SpecFlow&#xA;SpecFlow\TestResult.xml =&gt; SpecFlow" />
+      <option name="cleanBuild" value="true" />
+    </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_2" name="Restore NuGet packages" type="jb.nuget.installer">
@@ -87,6 +91,41 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_6" name="Jasmine install" type="jonnyzzz.npm">
+        <parameters>
+          <param name="npm_commands" value="install" />
+          <param name="teamcity.build.workingDir" value="Jasmine" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_7" name="Jasmine test" type="jonnyzzz.npm">
+        <parameters>
+          <param name="npm_commands" value="test" />
+          <param name="teamcity.build.workingDir" value="Jasmine" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_8" name="CasperJs" type="simpleRunner">
+        <parameters>
+          <param name="command.executable" value="RunTests.bat" />
+          <param name="teamcity.build.workingDir" value="CasperJs" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_9" name="CasperJs Video" type="simpleRunner">
+        <parameters>
+          <param name="command.executable" value="MakeVideo.bat" />
+          <param name="teamcity.build.workingDir" value="CasperJs/ffmpeg" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_10" name="SpecFlow" type="simpleRunner">
+        <parameters>
+          <param name="command.executable" value="RunSpecFlow.bat" />
+          <param name="teamcity.build.workingDir" value="SpecFlow" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="AutomationAndTestsWithTeamCity_HttpsGithubComChristianfredhAutomationAndTestsWit" />
@@ -99,6 +138,14 @@
         </parameters>
       </build-trigger>
     </build-triggers>
+    <build-extensions>
+      <extension id="BUILD_EXT_1" type="xml-report-plugin">
+        <parameters>
+          <param name="xmlReportParsing.reportDirs" value="CasperJs\output.xml" />
+          <param name="xmlReportParsing.reportType" value="junit" />
+        </parameters>
+      </extension>
+    </build-extensions>
     <cleanup />
   </settings>
 </build-type>

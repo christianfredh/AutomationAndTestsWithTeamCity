@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
-  <versionedSettings rootId="AutomationAndTestsWithTeamCity_HttpsGithubComChristianfredhAutomationAndTestsWit" enabled="true" showChanges="false" buildSettings="PREFER_VCS" />
+  <versionedSettings rootId="AutomationAndTestsWithTeamCity_HttpsGithubComChristianfredhAutomationAndTestsWit" enabled="true" showChanges="false" buildSettings="PREFER_CURRENT" />
+  <report-tabs>
+    <report-tab title="Specs" startPage="SpecFlow/TestResult.html" buildTypeId="AutomationAndTestsWithTeamCity_Build">
+      <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" />
+    </report-tab>
+  </report-tabs>
 </settings>
 
